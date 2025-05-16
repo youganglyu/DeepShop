@@ -1,19 +1,12 @@
-{\rtf1\ansi\ansicpg936\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+#!/bin/bash
 
-\f0\fs24 \cf0 #!/bin/bash\
-\
-echo "Running query_evolution.py..."\
-python src/data_process/query_evolution.py\
-\
-echo "Running break_subquery.py..."\
-python src/data_process/break_subquery.py\
-\
-echo "Running filter_data.py..."\
-python src/data_process/filter_data.py\
-\
+echo "Running query_evolution.py..."
+python src/data_process/query_evolution.py
+
+echo "Running break_subquery.py..."
+python src/data_process/break_subquery.py
+
+echo "Running filter_data.py..."
+python src/data_process/filter_data.py
+
 echo "All scripts executed successfully."}
