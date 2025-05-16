@@ -56,7 +56,7 @@ print(f"\nTotal samples selected: {len(final_samples)} (should be 150)")
 # ---------------------------
 # Step 4. Write the selected samples to a new JSONL file.
 # ---------------------------
-output_filename = "deepshop_filterd_150.jsonl"
+output_filename = "deepshop_filter_150.jsonl"
 with open(output_filename, "w") as f_out:
     for sample in final_samples:
         f_out.write(json.dumps(sample) + "\n")
