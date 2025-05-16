@@ -14,6 +14,8 @@ Web agents for online shopping have shown great promise in automating user inter
 pip install -r requirements.txt
 ```
 
+Note that set your api key and base_url in the **.env file**
+
 ## Shopping Query Evolution
 
 ![framework](./assets/evolution.jpg)
