@@ -1,6 +1,6 @@
 import numpy as np
 import json
-test_file='webvoyager'
+test_file='example'
 
 test_data=[]
 
@@ -19,7 +19,7 @@ att_p=0
 filter_p=0
 sort_p=0
 
-for i in range(len(test_data)):
+for i in range(len(10)):
     temp_result=1
     if test_data[i]['attribute']!='None':
         temp_result=temp_result*att_result[att_p]

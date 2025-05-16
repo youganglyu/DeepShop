@@ -147,7 +147,7 @@ if __name__ == '__main__':
     parser.add_argument("--api_key", default="key", type=str, help="YOUR_OPENAI_API_KEY")
     parser.add_argument("--api_model", default="gpt-4o", type=str, help="api model name")
     parser.add_argument("--max_attached_imgs", type=int, default=15)
-    parser.add_argument("--test_name", default="webvoyager", type=str, help="test model name")
+    parser.add_argument("--test_name", default="example", type=str, help="test model name")
 
     args = parser.parse_args()
     data_file = os.path.join('../../data/deepshop_filter_150.jsonl')
@@ -161,8 +161,8 @@ if __name__ == '__main__':
             ids.append(temp['id'])
 
     processes = []
-    num_data =150
-    num_processes = 10
+    num_data =10
+    num_processes = 2
     data_per_process = num_data // num_processes
     start_index_lst = []
     for idx in range(num_processes):
