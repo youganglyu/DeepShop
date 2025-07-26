@@ -1,3 +1,4 @@
 json
 openai
 numpy
+dotenv
