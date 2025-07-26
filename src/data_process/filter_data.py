@@ -7,7 +7,7 @@ from collections import defaultdict
 # Step 1. Read and process the JSONL file.
 # ---------------------------
 samples=[]
-with open('../../data/deepshop_evol_600_subquery.jsonl', 'r', encoding="utf-8") as f:
+with open('./data/deepshop_evol_600_subquery.jsonl', 'r', encoding="utf-8") as f:
     for line in f:
         temp = json.loads(line)
         samples.append(temp)
@@ -56,7 +56,7 @@ print(f"\nTotal samples selected: {len(final_samples)} (should be 150)")
 # ---------------------------
 # Step 4. Write the selected samples to a new JSONL file.
 # ---------------------------
-output_filename = "deepshop_filter_150.jsonl"
+output_filename = "./data/deepshop_filter_150.jsonl"
 with open(output_filename, "w") as f_out:
     for sample in final_samples:
         f_out.write(json.dumps(sample) + "\n")

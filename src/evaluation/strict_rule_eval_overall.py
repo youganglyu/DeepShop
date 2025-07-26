@@ -5,21 +5,21 @@ test_file='example'
 test_data=[]
 
 
-with open("../../data/deepshop_filter_150.jsonl", 'r', encoding="utf-8") as f:
+with open("./data/deepshop_example.jsonl", 'r', encoding="utf-8") as f:
     for line in f:
         temp = json.loads(line)
         test_data.append(temp)
 
-att_result=np.load('../../results/'+test_file+'_attribute.npy')
-filter_result=np.load('../../results/'+test_file+'_filter.npy')
-sort_result=np.load('../../results/'+test_file+'_sort.npy')
+att_result=np.load('./results/'+test_file+'_attribute.npy')
+filter_result=np.load('./results/'+test_file+'_filter.npy')
+sort_result=np.load('./results/'+test_file+'_sort.npy')
 
 final_result=[]
 att_p=0
 filter_p=0
 sort_p=0
 
-for i in range(len(10)):
+for i in range(len(test_data)):
     temp_result=1
     if test_data[i]['attribute']!='None':
         temp_result=temp_result*att_result[att_p]
@@ -36,4 +36,4 @@ success_count = sum(final_result)
 total_count = len(final_result)
 accuracy = (success_count / total_count) * 100
 print(f"Overll Acc: {accuracy:.2f}")
-np.save('../../results/'+test_file +"_overall"+ '.npy', final_result)
+np.save('./results/'+test_file +"_overall"+ '.npy', final_result)

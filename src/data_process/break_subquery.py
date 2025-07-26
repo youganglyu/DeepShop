@@ -4,11 +4,15 @@ import openai
 import json
 import numpy as np
 import math
+
+from matplotlib.pyplot import imread
 from openai import OpenAI
 from tqdm import tqdm
 import re
 import multiprocessing
 from dotenv import load_dotenv
+import os
+load_dotenv()
 
 def annotate_data(start, end,test_data,return_dict):
     out_list_local = []
@@ -97,7 +101,7 @@ if __name__ == "__main__":
     manager = multiprocessing.Manager()
     return_dict = manager.dict()
     test_data=[]
-    with open("../../data/deepshop_evol_600.jsonl", 'r', encoding="utf-8") as f:
+    with open("./data/deepshop_evol_600.jsonl", 'r', encoding="utf-8") as f:
         for line in f:
             temp = json.loads(line)
             test_data.append(temp)
@@ -127,7 +131,7 @@ if __name__ == "__main__":
         test_data[i]['filter']=temp[1]
         test_data[i]['sort']=temp[2]
 
-    with open('../../data/deepshop_evol_600_subquery.jsonl', 'w', encoding='utf-8') as f:
+    with open('./data/deepshop_evol_600_subquery.jsonl', 'w', encoding='utf-8') as f:
         for entry in test_data:
             json_line = json.dumps(entry, ensure_ascii=False)
             f.write(json_line + '\n')

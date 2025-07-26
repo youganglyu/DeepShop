@@ -8,6 +8,8 @@ import numpy as np
 import multiprocessing
 from openai import OpenAI
 from dotenv import load_dotenv
+load_dotenv()
+
 SYSTEM_PROMPT = """As an evaluator, you will be presented with three primary components to assist you in your role:
 
 1. Web Task Instruction: A clear and precise natural language directive that specifies an online shopping activity to be executed. The instruction may involve locating products that meet certain attribute requirements (e.g., color, size, brand), applying specific search filters (e.g., price range, customer ratings, availability), or fulfilling user-defined sorting preferences (e.g., lowest price, newest arrivals, best sellers). Tasks may also include verifying product details, comparing offers, or checking for shipping and return policies, depending on the scenario.
@@ -43,7 +45,7 @@ def auto_eval_by_gpt4v_submetric_mp_filter(start, end,test_name,test_data, api_m
     )
 
     for i in range(start, end):
-        process_dir = os.path.join('../results/'+test_name+'/', 'task' + test_data[i]['id'])
+        process_dir = os.path.join('./results/'+test_name+'/', 'task' + test_data[i]['id'])
         print(f'--------------------- {process_dir} ---------------------')
         res_files = sorted(os.listdir(process_dir))
 
@@ -150,7 +152,7 @@ if __name__ == '__main__':
     parser.add_argument("--test_name", default="example", type=str, help="test model name")
 
     args = parser.parse_args()
-    data_file = os.path.join('../../data/deepshop_filter_150.jsonl')
+    data_file = os.path.join('./data/deepshop_example.jsonl')
     domains = []
     test_data = []
     ids = []
@@ -184,4 +186,4 @@ if __name__ == '__main__':
     accuracy = (success_count / total_count) * 100
     print(f"Filter Acc: {accuracy:.2f}")
     domains = np.array(out_data)
-    np.save('../../results/'+args.test_name +"_filter"+ '.npy', out_data)
+    np.save('./results/'+args.test_name +"_filter"+ '.npy', out_data)

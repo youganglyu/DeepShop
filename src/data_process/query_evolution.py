@@ -6,7 +6,7 @@ from diverse_evolution import brodenProductPrompt
 
 test_seed=[]
 product_category=[]
-with open('../../data/shopping_seed.jsonl', 'r', encoding="utf-8") as f:
+with open('./data/shopping_seed.jsonl', 'r', encoding="utf-8") as f:
     for line in f:
         temp = json.loads(line)
         test_seed.append(temp["ques"])
@@ -54,7 +54,7 @@ for i in range(len(test_out)):
      "web": "https://www.amazon.com/?language=en_US&currency=USD","category": product_category[i],'difficulty':difficulty[i]}
     final_out.append(temp)
 
-with open('../../data/deepshop_evol_600.jsonl', 'w', encoding='utf-8') as f:
+with open('./data/deepshop_evol_600.jsonl', 'w', encoding='utf-8') as f:
     for entry in final_out:
         json_line = json.dumps(entry, ensure_ascii=False)
         f.write(json_line + '\n')
