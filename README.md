@@ -18,7 +18,6 @@
 - [Evaluation Metrics](#evaluation-metrics)
 - [Results](#results)
 - [API Configuration](#api-configuration)
-- [Citation](#citation)
 
 ## Abstract
 
@@ -294,20 +293,5 @@ This project is licensed under the MIT License.
 - Built upon existing benchmarks: Mind2Web-Live and WebVoyager
 - Powered by OpenAI GPT-4o for query evolution and evaluation
 - Community contributions and feedback
-
----
-
-## Citation
-
-If you use DeepShop in your research, please cite our paper:
-
-```bibtex
-@article{lyu2025deepshop,
-  title={DeepShop: A Benchmark for Deep Research Shopping Agents},
-  author={Lyu, Yougang and Zhang, Xiaoyu and Yan, Lingyong and de Rijke, Maarten and Ren, Zhaochun and Chen, Xiuying},
-  journal={arXiv preprint arXiv:2506.02839},
-  year={2025}
-}
-```
 
 **Note**: This benchmark is designed for research purposes. Please ensure compliance with e-commerce platforms' terms of service when using web agents for evaluation.
