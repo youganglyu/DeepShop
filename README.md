@@ -5,8 +5,14 @@
 
 ![framework](./assets/framework.jpg)
 
+## ECIR 2027 supplementary material
+
+[Download the ECIR 2027 supplementary material](./ECIR2027_DeepShop_Supplementary.pdf).
+It contains Sections A–E covering dataset analysis, evaluation, baselines, implementation, and error cases. Section A also includes the detailed query-complexity evolution analysis.
+
 ## 📋 Table of Contents
 
+- [ECIR 2027 supplementary material](#ecir-2027-supplementary-material)
 - [Abstract](#abstract)
 - [Features](#features)
 - [Project Structure](#project-structure)
