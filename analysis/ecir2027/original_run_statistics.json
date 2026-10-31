@@ -1,0 +1,275 @@
+{
+  "n_tasks": 150,
+  "overall": {
+    "Simple RAG": {
+      "successes": 11,
+      "rate_percent": 7.333333333333333
+    },
+    "Agent-E": {
+      "successes": 10,
+      "rate_percent": 6.666666666666667
+    },
+    "SeeAct": {
+      "successes": 16,
+      "rate_percent": 10.666666666666668
+    },
+    "Browser Use": {
+      "successes": 48,
+      "rate_percent": 32.0
+    }
+  },
+  "groups": {
+    "category": {
+      "Books": {
+        "n": 30,
+        "models": {
+          "Simple RAG": {
+            "successes": 2,
+            "rate_percent": 6.666666666666667
+          },
+          "Agent-E": {
+            "successes": 4,
+            "rate_percent": 13.333333333333334
+          },
+          "SeeAct": {
+            "successes": 1,
+            "rate_percent": 3.3333333333333335
+          },
+          "Browser Use": {
+            "successes": 10,
+            "rate_percent": 33.33333333333333
+          }
+        }
+      },
+      "Electronics": {
+        "n": 30,
+        "models": {
+          "Simple RAG": {
+            "successes": 3,
+            "rate_percent": 10.0
+          },
+          "Agent-E": {
+            "successes": 3,
+            "rate_percent": 10.0
+          },
+          "SeeAct": {
+            "successes": 6,
+            "rate_percent": 20.0
+          },
+          "Browser Use": {
+            "successes": 10,
+            "rate_percent": 33.33333333333333
+          }
+        }
+      },
+      "Home": {
+        "n": 30,
+        "models": {
+          "Simple RAG": {
+            "successes": 6,
+            "rate_percent": 20.0
+          },
+          "Agent-E": {
+            "successes": 2,
+            "rate_percent": 6.666666666666667
+          },
+          "SeeAct": {
+            "successes": 2,
+            "rate_percent": 6.666666666666667
+          },
+          "Browser Use": {
+            "successes": 10,
+            "rate_percent": 33.33333333333333
+          }
+        }
+      },
+      "Fashion": {
+        "n": 30,
+        "models": {
+          "Simple RAG": {
+            "successes": 0,
+            "rate_percent": 0.0
+          },
+          "Agent-E": {
+            "successes": 1,
+            "rate_percent": 3.3333333333333335
+          },
+          "SeeAct": {
+            "successes": 6,
+            "rate_percent": 20.0
+          },
+          "Browser Use": {
+            "successes": 11,
+            "rate_percent": 36.666666666666664
+          }
+        }
+      },
+      "Sports": {
+        "n": 30,
+        "models": {
+          "Simple RAG": {
+            "successes": 0,
+            "rate_percent": 0.0
+          },
+          "Agent-E": {
+            "successes": 0,
+            "rate_percent": 0.0
+          },
+          "SeeAct": {
+            "successes": 1,
+            "rate_percent": 3.3333333333333335
+          },
+          "Browser Use": {
+            "successes": 7,
+            "rate_percent": 23.333333333333332
+          }
+        }
+      }
+    },
+    "difficulty": {
+      "easy": {
+        "n": 50,
+        "models": {
+          "Simple RAG": {
+            "successes": 8,
+            "rate_percent": 16.0
+          },
+          "Agent-E": {
+            "successes": 9,
+            "rate_percent": 18.0
+          },
+          "SeeAct": {
+            "successes": 12,
+            "rate_percent": 24.0
+          },
+          "Browser Use": {
+            "successes": 25,
+            "rate_percent": 50.0
+          }
+        }
+      },
+      "medium": {
+        "n": 50,
+        "models": {
+          "Simple RAG": {
+            "successes": 3,
+            "rate_percent": 6.0
+          },
+          "Agent-E": {
+            "successes": 1,
+            "rate_percent": 2.0
+          },
+          "SeeAct": {
+            "successes": 4,
+            "rate_percent": 8.0
+          },
+          "Browser Use": {
+            "successes": 19,
+            "rate_percent": 38.0
+          }
+        }
+      },
+      "hard": {
+        "n": 50,
+        "models": {
+          "Simple RAG": {
+            "successes": 0,
+            "rate_percent": 0.0
+          },
+          "Agent-E": {
+            "successes": 0,
+            "rate_percent": 0.0
+          },
+          "SeeAct": {
+            "successes": 0,
+            "rate_percent": 0.0
+          },
+          "Browser Use": {
+            "successes": 4,
+            "rate_percent": 8.0
+          }
+        }
+      }
+    }
+  },
+  "paired_tests": [
+    {
+      "a": "Browser Use",
+      "b": "SeeAct",
+      "n": 150,
+      "df": 149,
+      "difference_pp": 21.333333333333336,
+      "t": 5.230963985545826,
+      "p_two_sided_unadjusted": 5.620784520174273e-07,
+      "pointwise_95_ci_pp": [
+        13.274599243940804,
+        29.392067422725866
+      ]
+    },
+    {
+      "a": "Browser Use",
+      "b": "Simple RAG",
+      "n": 150,
+      "df": 149,
+      "difference_pp": 24.666666666666668,
+      "t": 5.992147064200545,
+      "p_two_sided_unadjusted": 1.4922809877241788e-08,
+      "pointwise_95_ci_pp": [
+        16.53241063777145,
+        32.80092269556189
+      ]
+    },
+    {
+      "a": "Browser Use",
+      "b": "Agent-E",
+      "n": 150,
+      "df": 149,
+      "difference_pp": 25.333333333333336,
+      "t": 6.656369037577104,
+      "p_two_sided_unadjusted": 5.037374195731766e-10,
+      "pointwise_95_ci_pp": [
+        17.812866811891663,
+        32.853799854775005
+      ]
+    },
+    {
+      "a": "SeeAct",
+      "b": "Simple RAG",
+      "n": 150,
+      "df": 149,
+      "difference_pp": 3.3333333333333335,
+      "t": 1.1482961598805683,
+      "p_two_sided_unadjusted": 0.2526865142152251,
+      "pointwise_95_ci_pp": [
+        -2.402739661095539,
+        9.069406327762206
+      ]
+    },
+    {
+      "a": "SeeAct",
+      "b": "Agent-E",
+      "n": 150,
+      "df": 149,
+      "difference_pp": 4.0,
+      "t": 1.5063318137100217,
+      "p_two_sided_unadjusted": 0.13409913502638357,
+      "pointwise_95_ci_pp": [
+        -1.2472188656027061,
+        9.247218865602706
+      ]
+    },
+    {
+      "a": "Simple RAG",
+      "b": "Agent-E",
+      "n": 150,
+      "df": 149,
+      "difference_pp": 0.6666666666666667,
+      "t": 0.2764949570284886,
+      "p_two_sided_unadjusted": 0.7825510965150948,
+      "pointwise_95_ci_pp": [
+        -4.097767855456388,
+        5.431101188789722
+      ]
+    }
+  ]
+}

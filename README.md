@@ -1,5 +1,7 @@
 # **DeepShop: A Benchmark for Deep Research Shopping Agents**
 
+> This branch contains the ECIR 2027 results revision for review. The `main` branch is unchanged.
+
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -8,7 +10,7 @@
 ## ECIR 2027 supplementary material
 
 [Download the ECIR 2027 supplementary material](./ECIR2027_DeepShop_Supplementary.pdf).
-It contains Sections A–E covering cross-domain complexity distribution, evaluation, baselines, implementation, and error cases. Query-complexity evolution plots and their analysis are presented in the ECIR manuscript's main text.
+It contains Sections A–E, including recomputed original-run paired tests and version-specific commercial error cases. [Stored task outcomes and a recomputation script](analysis/ecir2027/README.md) support the four reconciled original baseline rows and Figure 3. Query-complexity evolution remains in the main manuscript.
 
 ## 📋 Table of Contents
 

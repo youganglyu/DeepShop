@@ -1,0 +1,1681 @@
+{
+  "schema_version": 1,
+  "scope": "Saved outcomes of the original Simple RAG, Agent-E, SeeAct, and Browser Use runs, regrouped without rerunning agents or judges.",
+  "dataset_sha256": "66efda0f212a8e6d805e86adb343a78c7baba9bab0ed0217a39b2fe4f54caf6c",
+  "models": [
+    "Simple RAG",
+    "Agent-E",
+    "SeeAct",
+    "Browser Use"
+  ],
+  "source_arrays": {
+    "Simple RAG": {
+      "run": "m24",
+      "sha256": "8708b68fa0573030335ee75c8e3b3a47180934e189b713bf6bb91bdaf7c65f74"
+    },
+    "Agent-E": {
+      "run": "m28",
+      "sha256": "8ae312721a7039de3c056d1207bf34b1e677abdcb48eac2e30b18c1cba21ee94"
+    },
+    "SeeAct": {
+      "run": "m27",
+      "sha256": "4c5ef60430da17c22945bb761db4ef4f7afeebdee257928e032e334e5052e5dc"
+    },
+    "Browser Use": {
+      "run": "m26",
+      "sha256": "054f748b2cea0fb2cf36f46bc75c2679000f3c9320cfaf934e83d5bb4d677991"
+    }
+  },
+  "tasks": [
+    {
+      "id": "Amazon--31",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--49",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 1,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--20",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--100",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--104",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--108",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--68",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 1,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--87",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--14",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 1,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--158",
+      "category": "Electronics",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--300",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--227",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--242",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--308",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--302",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--268",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--361",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--384",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--314",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--341",
+      "category": "Electronics",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--580",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--541",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--526",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--574",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--510",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--505",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--502",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--514",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--560",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--586",
+      "category": "Electronics",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--66",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--195",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--76",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--113",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--89",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--135",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--7",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--16",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 1,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--91",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--95",
+      "category": "Fashion",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--207",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--391",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--295",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--301",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--281",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--355",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--363",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--388",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--213",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--307",
+      "category": "Fashion",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--501",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--595",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--555",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--591",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--576",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--588",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--516",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--589",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--563",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--535",
+      "category": "Fashion",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--54",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--156",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--162",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--172",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--112",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--178",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--165",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--123",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--128",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--15",
+      "category": "Sports",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--223",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--277",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--354",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--323",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--272",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--296",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--312",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--328",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--293",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--244",
+      "category": "Sports",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--596",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--512",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--503",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--528",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--578",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--544",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--562",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--577",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--556",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--554",
+      "category": "Sports",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--79",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--137",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 1,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--199",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--18",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--134",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--17",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--124",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--175",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--34",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 1,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--11",
+      "category": "Home",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--338",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--311",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--275",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--252",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--334",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--306",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--367",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--369",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--343",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--237",
+      "category": "Home",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--553",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--546",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--518",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--567",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--550",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--534",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--533",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--521",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--517",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--537",
+      "category": "Home",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--92",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--119",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--192",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--130",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--48",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 1,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--151",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--159",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 1,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--19",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--173",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--64",
+      "category": "Books",
+      "difficulty": "easy",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 1,
+        "SeeAct": 1,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--319",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--394",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--357",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--339",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--259",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 1,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--330",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--248",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--392",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 1,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--230",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--239",
+      "category": "Books",
+      "difficulty": "medium",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--592",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--573",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--530",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 1
+      }
+    },
+    {
+      "id": "Amazon--548",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--519",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--559",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--557",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--597",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--551",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    },
+    {
+      "id": "Amazon--539",
+      "category": "Books",
+      "difficulty": "hard",
+      "success": {
+        "Simple RAG": 0,
+        "Agent-E": 0,
+        "SeeAct": 0,
+        "Browser Use": 0
+      }
+    }
+  ]
+}
