@@ -10,7 +10,7 @@
 ## ECIR 2027 supplementary material
 
 [Download the ECIR 2027 supplementary material](./ECIR2027_DeepShop_Supplementary.pdf).
-It contains Sections A–E, including recomputed original-run paired tests and version-specific commercial error cases. [Stored task outcomes and a recomputation script](analysis/ecir2027/README.md) support the four reconciled original baseline rows and Figure 3. Query-complexity evolution remains in the main manuscript.
+It contains Sections A–E, including dataset validation and constraint-type coverage, evaluation rules and human agreement, recomputed original-run paired tests, and version-specific commercial error cases. [Stored task outcomes and a recomputation script](analysis/ecir2027/README.md) support the four reconciled original baseline rows and Figure 3. Query-complexity evolution remains in the main manuscript.
 
 ## 📋 Table of Contents
 
