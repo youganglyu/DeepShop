@@ -1,4 +1,7 @@
-json
-openai
-numpy
-dotenv
+# Tested with Python 3.11.1. Direct dependencies are pinned for the release.
+numpy==2.2.5
+scipy==1.17.1
+openai==2.15.0
+python-dotenv==1.2.1
+matplotlib==3.10.8
+tqdm==4.67.1

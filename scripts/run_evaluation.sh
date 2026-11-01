@@ -1,15 +1,8 @@
-#!/bin/bash
+#!/bin/sh
+set -eu
 
-echo "Running auto_eval_attribute.py..."
-python ./src/evaluation/auto_eval_attribute.py --test_name example
+REPO_DIR=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+PYTHON_BIN=${PYTHON:-python3}
 
-echo "Running auto_eval_filter.py..."
-python ./src/evaluation/auto_eval_filter.py --test_name example
-
-echo "Running auto_eval_sort.py..."
-python ./src/evaluation/auto_eval_sort.py --test_name example
-
-echo "Running strict_rule_eval_overall.py..."
-python ./src/evaluation/strict_rule_eval_overall.py
-
-echo "All evaluation scripts executed successfully."
+"$PYTHON_BIN" "$REPO_DIR/src/evaluation/evaluation_common.py" "$@"
+printf '%s\n' 'Evaluation command completed.'

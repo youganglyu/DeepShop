@@ -1,158 +1,106 @@
-# **DeepShop: A Benchmark for Deep Research Shopping Agents**
+# DeepShop: A Benchmark for Deep Research Shopping Agents
 
-> This branch contains the ECIR 2027 results revision for review. The `main` branch is unchanged.
+> This branch contains the ECIR 2027 resource revision for review. The `main` branch is unchanged.
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+DeepShop evaluates web shopping agents on controlled multi-constraint tasks in a live online shopping environment. Tasks combine product attributes, search filters, and sorting preferences. The released benchmark contains 150 tasks across five product categories and three difficulty levels.
 
-![framework](./assets/framework.jpg)
+[Paper](https://arxiv.org/abs/2506.02839) · [ECIR supplementary material](./ECIR2027_DeepShop_Supplementary.pdf) · [Saved-result analysis](./analysis/ecir2027/README.md) · [Code license](./LICENSE.txt)
 
-## ECIR 2027 supplementary material
+![DeepShop framework](./assets/framework.jpg)
 
-[Download the ECIR 2027 supplementary material](./ECIR2027_DeepShop_Supplementary.pdf).
-It contains Sections A–E, including dataset validation and constraint-type coverage, evaluation rules and human agreement, recomputed original-run paired tests, and version-specific commercial error cases. [Stored task outcomes and a recomputation script](analysis/ecir2027/README.md) support the four reconciled original baseline rows and Figure 3. Query-complexity evolution remains in the main manuscript.
+## Released resources
 
-## 📋 Table of Contents
+| Resource | Contents |
+| --- | --- |
+| `data/shopping_seed.jsonl` | 50 seed queries |
+| `data/deepshop_evol_600.jsonl` | 600 evolved candidates |
+| `data/deepshop_evol_600_subquery.jsonl` | Candidate subqueries and difficulty labels |
+| `data/deepshop_filter_150.jsonl` | Final benchmark: 150 tasks; 30 per category and 50 per difficulty level |
+| `data/deepshop_example.jsonl`, `results/example/` | 10 tasks with saved example trajectories and screenshots |
+| `src/evaluation/`, `scripts/run_evaluation.sh` | Evaluation of saved agent trajectories |
+| `analysis/ecir2027/` | Saved task outcomes for four original baselines and offline statistical recomputation |
+| `src/data_process/`, `scripts/run_data_evolution.sh` | Query-construction scripts |
 
-- [ECIR 2027 supplementary material](#ecir-2027-supplementary-material)
-- [Abstract](#abstract)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Data Format](#data-format)
-- [Shopping Query Evolution](#shopping-query-evolution)
-- [Fine-grained and Holistic Evaluation](#fine-grained-and-holistic-evaluation)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Results](#results)
-- [API Configuration](#api-configuration)
-
-## Abstract
-
-Web agents for online shopping have shown great promise in automating user interactions across e-commerce platforms. Benchmarks for assessing such agents do not reflect the complexity of real-world shopping scenarios, as they often consist of overly simple queries with deterministic paths, such as "Find iPhone 15." Real shopping scenarios are inherently more layered, involving multi-dimensional product attributes, search filters, and user-specific sorting preferences. 
-
-To address this gap, we introduce **DeepShop**, a benchmark designed to evaluate web agents in complex and realistic online shopping environments. DeepShop comprises three key components:
-
-1. **Query diversity evolution**: Starting from real user queries, we generate diverse queries across five popular online shopping domains.
-2. **Query complexity evolution**: We further evolve these queries to increase complexity, considering product attributes, search filters, and sorting preferences, and classify them into three levels: easy, medium, and hard, based on the number of evolutions.
-3. **Fine-grained and holistic evaluation**: We propose an automated evaluation framework that assesses agent performance in terms of fine-grained aspects (product attributes, search filters, and sorting preferences) and reports the overall success rate through holistic evaluation.
-
-We conduct a systematic evaluation of retrieval-augmented generation (RAG) methods, web agents, and deep research systems. Results show that RAG struggles with complex queries due to its lack of web interaction, while other methods face significant challenges with filters and sorting preferences, leading to low overall success rates. We also perform cross-category, complexity-based evaluations and error analyses to support the advancement of deep research shopping agents.
-
-## Features
-
-- 🛒 **Multi-domain Coverage**: Supports 5 popular shopping categories (Books, Electronics, Home, Fashion, Sports)
-- 🔄 **Query Evolution Pipeline**: Two-stage evolution process for realistic and complex shopping scenarios
-- 📊 **Fine-grained Evaluation**: Automated assessment across product attributes, filters, and sorting preferences
-- 🎯 **Difficulty Levels**: Queries classified into easy, medium, and hard based on complexity
-- 🤖 **Agent Benchmarking**: Comprehensive evaluation framework for web agents and RAG systems
-- 📈 **Holistic Assessment**: Overall success rate evaluation with detailed error analysis
-
-## Project Structure
-
-```
-DeepShop-main/
-├── assets/                          # Project images and diagrams
-│   ├── evolution.jpg               # Query evolution pipeline diagram
-│   └── framework.jpg               # Overall framework diagram
-├── data/                           # Dataset files
-│   ├── deepshop_evol_600_subquery.jsonl    # Subquery breakdown data
-│   ├── deepshop_evol_600.jsonl             # Main evolved dataset
-│   ├── deepshop_example.jsonl              # Example queries
-│   ├── deepshop_filter_150.jsonl           # Filtered dataset
-│   └── shopping_seed.jsonl                 # Seed queries
-├── results/                        # Evaluation results and examples
-│   └── example/                    # Sample evaluation results
-│       ├── taskAmazon--100/        # Individual task results
-│       ├── taskAmazon--104/
-│       └── ...                     # More task directories
-├── scripts/                        # Execution scripts
-│   ├── run_data_evolution.sh       # Data evolution pipeline
-│   └── run_evaluation.sh           # Evaluation pipeline
-├── src/                           # Source code
-│   ├── data_process/              # Data processing modules
-│   │   ├── break_subquery.py      # Subquery decomposition
-│   │   ├── complex_evolution.py   # Complexity evolution
-│   │   ├── diverse_evolution.py   # Diversity evolution
-│   │   ├── filter_data.py         # Data filtering
-│   │   ├── openai_access.py       # OpenAI API integration
-│   │   └── query_evolution.py     # Main evolution pipeline
-│   └── evaluation/                # Evaluation modules
-│       ├── auto_eval_attribute.py # Attribute evaluation
-│       ├── auto_eval_filter.py    # Filter evaluation
-│       ├── auto_eval_sort.py      # Sorting evaluation
-│       └── strict_rule_eval_overall.py  # Overall evaluation
-├── requirements.txt               # Python dependencies
-└── README.md                     # This file
-```
+Categories are Books, Electronics, Home, Fashion, and Sports. Difficulty labels are easy, medium, and hard. The example trajectories demonstrate the evaluation input format; they are not a complete set of trajectories for all reported systems. The evaluation scripts score trajectories supplied by an agent implementation; they do not launch a browser agent.
 
 ## Installation
 
-### Prerequisites
+Tested with Python 3.11.1. Direct dependencies are pinned in `requirements.txt`.
 
-- Python 3.8 or higher
-- OpenAI API key (for query evolution and evaluation)
-
-### Setup
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone <repository-url>
-   cd DeepShop-main
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure API credentials**:
-   Create a `.env` file in the project root with your OpenAI API configuration:
-
-   ```bash
-   # .env file
-   OPENAI_API_KEY=your_api_key_here
-   OPENAI_BASE_URL=your_base_url_here  # Optional, for custom endpoints
-   ```
-
-## Quick Start
-
-### 1. Run Data Evolution Pipeline
-
-Generate diverse and complex shopping queries:
-
-```bash
-sh ./scripts/run_data_evolution.sh
+```sh
+git clone --branch ecir2027-results-review-v11 https://github.com/youganglyu/DeepShop.git
+cd DeepShop
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-This will execute:
+## Quick start without API calls
 
-- Query evolution across domains
-- Subquery decomposition
-- Data filtering and processing
+Recompute overall scores, category and difficulty breakdowns, paired tests, and confidence intervals from the released outcomes of Simple RAG, Agent-E, SeeAct, and Browser Use:
 
-### 2. Run Evaluation Pipeline
-
-Evaluate agent performance on the generated queries:
-
-```bash
-sh ./scripts/run_evaluation.sh
+```sh
+python analysis/ecir2027/recompute_result_statistics.py
 ```
 
-This will execute:
+This reads saved binary outcomes and prints JSON. It does not rerun agents or judges. See the [analysis documentation](./analysis/ecir2027/README.md) for the scope and statistical definitions.
 
-- Attribute-based evaluation
-- Filter-based evaluation
-- Sorting preference evaluation
-- Overall success rate calculation
+Validate the 10 supplied example trajectories:
 
-## Data Format
+```sh
+sh scripts/run_evaluation.sh \
+  --dataset data/deepshop_example.jsonl \
+  --run-name example \
+  --results-dir results \
+  --dry-run
+```
 
-### Query Structure
+A successful dry run reports 10 tasks and 10 trajectories, checks required inputs and PNG headers, and exits without API calls or result files. Missing trajectories, duplicate task IDs, or malformed inputs cause a nonzero exit. Dry-run validation does not establish whether a task was successfully solved.
 
-Each query in the dataset follows this JSON structure:
+## Evaluate trajectories from your agent
+
+Run your agent separately on the released tasks. Store each trajectory under its task ID:
+
+```text
+results/my-agent/
+└── taskAmazon--14/
+    ├── interact_messages.json
+    ├── screenshot1.png
+    └── screenshot2.png
+```
+
+`interact_messages.json` is a JSON array of message objects with a `content` field. Following the supplied examples, a completed trajectory ends with `Action: ANSWER; <final answer>` in its last message. Content can be a string or a list of text blocks. Screenshots use sequential names `screenshot1.png`, `screenshot2.png`, etc.; the evaluator attaches the last 15 by default. A supplied trajectory without a final answer receives failure on its applicable dimensions. A missing trajectory is an input error, not an automatically assigned failure.
+
+First validate your full 150-task run:
+
+```sh
+sh scripts/run_evaluation.sh \
+  --dataset data/deepshop_filter_150.jsonl \
+  --run-name my-agent \
+  --results-dir results \
+  --dry-run
+```
+
+For new judge calls, copy `.env.example` to `.env` and set `OPENAI_API_KEY`. Set `OPENAI_BASE_URL` only when using an OpenAI-compatible endpoint. Environment variables take precedence over `.env`.
+
+```sh
+cp .env.example .env
+# Edit .env to supply your API key before running the next command.
+sh scripts/run_evaluation.sh \
+  --dataset data/deepshop_filter_150.jsonl \
+  --run-name my-agent \
+  --results-dir results \
+  --api-model gpt-4o \
+  --output-dir results/evaluations/my-agent
+```
+
+This command makes paid judge API calls. Select an available vision-capable model for `--api-model`; `gpt-4o` is the default alias. Output records the requested model and, where returned by the API, the resolved response model. New calls do not reproduce a historical model snapshot or shopping environment. Use the offline analysis command to recompute the released historical results.
+
+New outputs are `attribute.json`, `filter.json`, `sort.json`, and `overall.json`. Each contains task IDs, run metadata, and a dataset SHA-256 hash. Dimension scores use only applicable tasks as their denominators. Overall success requires every applicable dimension to succeed; absent dimensions are satisfied by convention. Aggregation joins by task ID and rejects missing, duplicate, or mismatched records. Historical `.npy` result arrays are not read or overwritten. Existing output files are never replaced; choose a fresh output directory for another evaluation.
+
+Paths supplied on the command line are relative to the working directory. Set `PYTHON=/path/to/python` to use a specific interpreter with the shell scripts.
+
+## Task format
 
 ```json
 {
@@ -168,138 +116,28 @@ Each query in the dataset follows this JSON structure:
 }
 ```
 
-### Field Descriptions
+`id` is the join key for tasks and evaluation records. `ques` is the complete task; `attribute`, `filter`, and `sort` contain dimension-specific requirements. `"None"` marks an absent requirement. `web` identifies the target website. Category and difficulty labels support grouped analysis.
 
-- **web_name**: Target e-commerce platform
-- **id**: Unique query identifier
-- **ques**: Full query text
-- **web**: Target website URL
-- **attribute**: Product attribute requirements
-- **filter**: Search filter requirements
-- **sort**: Sorting preference requirements
-- **category**: Product category
-- **difficulty**: Query difficulty level (easy/medium/hard)
+## Query construction
 
-## Shopping Query Evolution
+![Query evolution](./assets/evolution.jpg)
 
-![evolution](./assets/evolution.jpg)
+The construction pipeline expands seed queries across categories and applies five rounds of complexity evolution to build a controlled pool of shopping constraints. The released JSONL files are the fixed benchmark artifacts; running construction again generates new candidates and can change the dataset.
 
-The query evolution pipeline in *DeepShop* is designed to simulate realistic and increasingly complex online shopping behaviors through a two-stage process: **query diversity evolution** and **query complexity evolution**.
+For construction experiments, use a separate checkout, configure API access, and run:
 
-### Stage 1: Query Diversity Evolution
-
-- Starts with 50 real-world seed queries from existing benchmarks (Mind2Web-Live and WebVoyager)
-- Expands using GPT-4o to cover five popular product categories: Books, Electronics, Home, Fashion, and Sports
-- Each seed query is rewritten to target a different domain, creating a balanced and representative dataset
-
-### Stage 2: Query Complexity Evolution
-
-Each diversified query is progressively enhanced across three dimensions:
-
-- **Product attributes** (e.g., brand, color, size)
-- **Search filters** (e.g., rating thresholds, shipping policies)
-- **Sorting preferences** (e.g., lowest price, highest rating)
-
-Enhancements are applied iteratively in five rounds, with one dimension randomly selected in each iteration, resulting in queries of varying difficulty levels.
-
-### Execution
-
-```bash
-sh ./scripts/run_data_evolution.sh
+```sh
+sh scripts/run_data_evolution.sh
 ```
 
-## Fine-grained and Holistic Evaluation
+This invokes API-dependent query evolution and decomposition, then filtering, and writes files under `data/`. It is not needed to use the released benchmark or recompute its saved results.
 
-The evaluation pipeline comprehensively assesses web agents' ability to handle complex online shopping tasks through a two-stage protocol:
+## Tests and license
 
-### Stage 1: Fine-grained Evaluation
+Offline evaluator checks can be run with:
 
-Each query is decomposed into three subcomponents:
-
-- **Product attributes**
-- **Search filters** 
-- **Sorting preferences**
-
-Using GPT-4o, each agent's result is automatically assessed against these subqueries by comparing the agent's final outputs and screenshots with the specified requirements, with binary labels ("Success" or "Not Success") assigned for each subgoal.
-
-### Stage 2: Holistic Task Success Evaluation
-
-The system checks whether all applicable subcomponents are satisfied. A query is marked as successful only if the agent correctly fulfills all explicitly stated requirements; omitted components are treated as automatically satisfied.
-
-### Execution
-
-```bash
-sh ./scripts/run_evaluation.sh
+```sh
+python -m unittest discover -s tests -v
 ```
 
-**Note**: We have provided examples in the `results/example/` folder to make it easier to run the evaluation.
-
-## Evaluation Metrics
-
-### Fine-grained Metrics
-
-1. **Attribute Success Rate**: Percentage of correctly identified product attributes
-2. **Filter Success Rate**: Percentage of correctly applied search filters
-3. **Sort Success Rate**: Percentage of correctly implemented sorting preferences
-
-### Holistic Metrics
-
-1. **Overall Success Rate**: Percentage of queries where all requirements are met
-2. **Category-wise Performance**: Success rates across different product categories
-3. **Difficulty-wise Performance**: Success rates across easy/medium/hard queries
-
-### Cross-category Analysis
-
-- Performance comparison across Books, Electronics, Home, Fashion, and Sports
-- Domain-specific challenges and capabilities assessment
-
-## Results
-
-The evaluation results are stored in the `results/` directory, organized by task ID. Each task directory contains:
-
-- `agent.log`: Detailed execution log
-- `interact_messages.json`: Agent interaction messages
-- `screenshot*.png`: Screenshots of agent actions
-- Evaluation metrics and scores
-
-### Example Results
-
-Sample results are available in `results/example/` showing:
-
-- Task execution flow
-- Screenshot sequences
-- Evaluation outputs
-- Performance metrics
-
-## API Configuration
-
-### OpenAI API Setup
-
-1. **Get API Key**: Obtain your OpenAI API key from [OpenAI Platform](https://platform.openai.com/)
-
-2. **Environment Variables**: Set up your `.env` file:
-
-   ```bash
-   OPENAI_API_KEY=sk-your-api-key-here
-   OPENAI_BASE_URL=https://api.openai.com/v1  # Optional
-   ```
-
-### Custom API Endpoints
-
-If using custom API endpoints (e.g., Azure OpenAI), configure the base URL in your `.env` file:
-
-```bash
-OPENAI_BASE_URL=https://your-resource.openai.azure.com/openai/deployments/your-deployment
-```
-
-## License
-
-This project is licensed under the MIT License.
-
-## Acknowledgments
-
-- Built upon existing benchmarks: Mind2Web-Live and WebVoyager
-- Powered by OpenAI GPT-4o for query evolution and evaluation
-- Community contributions and feedback
-
-**Note**: This benchmark is designed for research purposes. Please ensure compliance with e-commerce platforms' terms of service when using web agents for evaluation.
+Code is provided under the [MIT license](./LICENSE.txt). Third-party website content remains subject to its respective rights and terms.
